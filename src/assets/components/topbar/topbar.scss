@@ -1,22 +1,24 @@
 @import '../../../global.scss';
 
 .topbar {
-  border: 2px solid red;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   position: fixed;
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   background-color: #fff;
-  :hover {
-    background-color: #eeecec;
+  &:hover {
+    box-shadow: 0 0 10px rgba(172, 168, 168, 0.5);
   }
   z-index: 2;
 
   .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .left {
-      padding-left: 10px;
+      margin-left: 100px;
       a {
         img {
           width: 50px;
@@ -25,7 +27,7 @@
       }
     }
     .right {
-      padding-right: 10px;
+      margin-right: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -36,13 +38,15 @@
         gap: 10px;
         align-items: center;
         a {
+          background-color: transparent;
+          color: #303030;
+          font-size: 20px;
+          line-height: 1.2;
           text-decoration: none;
-          font-size: 1.2rem;
-          font-weight: bold;
         }
         li {
           :hover {
-            text-decoration: underline;
+            background-color: aqua;
           }
         }
       }
